@@ -1,0 +1,147 @@
+{
+    "title": "Apify-Scraper",
+    "type": "object",
+    "schemaVersion": 1,
+    "description": "Scrape data from Apify Store with all available filters",
+    "properties": {
+        "search": {
+            "title": "Search Query",
+            "type": "array",
+            "description": "Search term to filter store items",
+            "editor": "stringList",
+            "default": [
+                "YouTube Scraper",
+                "github"
+              ]
+        },
+        "sortBy": {
+            "title": "Sort By",
+            "type": "string",
+            "description": "Sorting method for results",
+            "default": "relevance",
+            "editor": "select",
+            "enum": [
+                "relevance",
+                "popularity",
+                "newest",
+                "lastUpdate"
+            ],
+            "enumTitles": [
+                "Most Relevant",
+                "Popular",
+                "Newest",
+                "Recently Updated"
+            ]
+        },
+        "category": {
+            "title": "Category",
+            "type": "string",
+            "description": "Filter by specific category",
+            "default": "",
+            "editor": "select",
+            "enum": [
+                "",
+                "AI",
+                "AGENTS",
+                "AUTOMATION",
+                "DEVELOPER_TOOLS",
+                "ECOMMERCE",
+                "JOBS",
+                "LEAD_GENERATION",
+                "NEWS",
+                "SEO_TOOLS",
+                "SOCIAL_MEDIA",
+                "TRAVEL",
+                "VIDEOS",
+                "REAL_ESTATE",
+                "INTEGRATIONS",
+                "OTHER",
+                "OPEN_SOURCE"
+            ],
+            "enumTitles": [
+                "All Categories",
+                "AI",
+                "Agents",
+                "Automation",
+                "Developer Tools",
+                "E-commerce",
+                "Jobs",
+                "Lead Generation",
+                "News",
+                "SEO Tools",
+                "Social Media",
+                "Travel",
+                "Videos",
+                "Real Estate",
+                "Integrations",
+                "Other",
+                "Open Source"
+            ]
+        },
+        "pricingModel": {
+            "title": "Pricing Model",
+            "type": "string",
+            "description": "Filter by pricing model",
+            "default": "",
+            "editor": "select",
+            "enum": [
+                "",
+                "PRICE_PER_DATASET_ITEM",
+                "PAY_PER_EVENT",
+                "FREE",
+                "FLAT_PRICE_PER_MONTH"
+            ],
+            "enumTitles": [
+                "All Pricing Models",
+                "Pay Per Result",
+                "Pay Per Event",
+                "Free",
+                "Monthly Rental"
+            ]
+        },
+        "managedBy": {
+            "title": "Managed By",
+            "type": "string",
+            "description": "Filter by management type",
+            "default": "",
+            "editor": "select",
+            "enum": [
+                "",
+                "APIFY",
+                "COMMUNITY"
+            ],
+            "enumTitles": [
+                "All Developers",
+                "Apify Official",
+                "Community"
+            ]
+        },
+        "limit": {
+            "title": "Items Per Request",
+            "type": "integer",
+            "description": "Number of items to fetch per API request (max 100)",
+            "default": 24,
+            "minimum": 1,
+            "maximum": 100,
+            "unit": "items"
+        },
+        "maxResults": {
+            "title": "Max Results to Fetch",
+            "type": "integer",
+            "description": "Maximum total results to collect (0 for unlimited)",
+            "default": 0,
+            "minimum": 0,
+            "unit": "items"
+        },
+        "batchDelay": {
+            "title": "Delay Between Requests",
+            "type": "integer",
+            "description": "Milliseconds to wait between API requests",
+            "default": 100,
+            "minimum": 0,
+            "maximum": 10000,
+            "unit": "ms"
+        }
+    },
+    "required": []
+}

@@ -1,0 +1,13 @@
+{
+    "actorSpecification": 1,
+    "name": "Apify-Scraper",
+    "title": "Apify Scraper",
+    "description": "Scrapes data from the Apify Store using filters like search, category, pricing model, etc., with support for multiple queries and state persistence.",
+    "version": "0.1",
+    "meta": {
+        "templateId": "js"
+    },
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile",
+    "readme": "./README.md"
+}
