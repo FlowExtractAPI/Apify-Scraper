@@ -1,42 +1,37 @@
 {
-    "title": "Apify-Scraper",
+    "title": "🚀 Apify Store Scraper",
     "type": "object",
     "schemaVersion": 1,
-    "description": "Scrape data from Apify Store with all available filters",
+    "description": "🔍 Scrape Actors from the Apify Store with smart filters like category, pricing, and popularity — now with support for multiple search terms and automatic resume on crash.",
     "properties": {
         "search": {
-            "title": "Search Query",
+            "title": "🔎 Search Terms",
             "type": "array",
-            "description": "Search term to filter store items",
+            "description": "Enter one or more keywords to search Actors (e.g., 'YouTube Scraper', 'GitHub').",
             "editor": "stringList",
             "default": [
                 "YouTube Scraper",
                 "github"
-              ]
+            ]
         },
         "sortBy": {
-            "title": "Sort By",
+            "title": "📊 Sort By",
             "type": "string",
-            "description": "Sorting method for results",
+            "description": "Choose how the results should be sorted.",
             "default": "relevance",
             "editor": "select",
-            "enum": [
-                "relevance",
-                "popularity",
-                "newest",
-                "lastUpdate"
-            ],
+            "enum": ["relevance", "popularity", "newest", "lastUpdate"],
             "enumTitles": [
-                "Most Relevant",
-                "Popular",
-                "Newest",
-                "Recently Updated"
+                "🎯 Most Relevant",
+                "🔥 Popular",
+                "🆕 Newest",
+                "♻️ Recently Updated"
             ]
         },
         "category": {
-            "title": "Category",
+            "title": "📁 Category",
             "type": "string",
-            "description": "Filter by specific category",
+            "description": "🎯 Narrow down results by selecting a specific category.",
             "default": "",
             "editor": "select",
             "enum": [
@@ -59,29 +54,29 @@
                 "OPEN_SOURCE"
             ],
             "enumTitles": [
-                "All Categories",
-                "AI",
-                "Agents",
-                "Automation",
-                "Developer Tools",
-                "E-commerce",
-                "Jobs",
-                "Lead Generation",
-                "News",
-                "SEO Tools",
-                "Social Media",
-                "Travel",
-                "Videos",
-                "Real Estate",
-                "Integrations",
-                "Other",
-                "Open Source"
+                "📦 All Categories",
+                "🧠 AI",
+                "🤖 Agents",
+                "⚙️ Automation",
+                "👨‍💻 Developer Tools",
+                "🛒 E-commerce",
+                "💼 Jobs",
+                "📞 Lead Generation",
+                "🗞 News",
+                "🔍 SEO Tools",
+                "📱 Social Media",
+                "✈️ Travel",
+                "🎥 Videos",
+                "🏘 Real Estate",
+                "🔌 Integrations",
+                "📦 Other",
+                "🌐 Open Source"
             ]
         },
         "pricingModel": {
-            "title": "Pricing Model",
+            "title": "💰 Pricing Model",
             "type": "string",
-            "description": "Filter by pricing model",
+            "description": "Filter results by pricing type (free, monthly, etc.).",
             "default": "",
             "editor": "select",
             "enum": [
@@ -92,17 +87,17 @@
                 "FLAT_PRICE_PER_MONTH"
             ],
             "enumTitles": [
-                "All Pricing Models",
-                "Pay Per Result",
-                "Pay Per Event",
-                "Free",
-                "Monthly Rental"
+                "💲 All Pricing Models",
+                "📈 Pay Per Result",
+                "📊 Pay Per Event",
+                "🆓 Free",
+                "📅 Monthly Rental"
             ]
         },
         "managedBy": {
-            "title": "Managed By",
+            "title": "🛠 Managed By",
             "type": "string",
-            "description": "Filter by management type",
+            "description": "Filter by the developer type (Apify official or community).",
             "default": "",
             "editor": "select",
             "enum": [
@@ -111,32 +106,32 @@
                 "COMMUNITY"
             ],
             "enumTitles": [
-                "All Developers",
-                "Apify Official",
-                "Community"
+                "👥 All Developers",
+                "🏢 Apify Official",
+                "🧑‍💻 Community"
             ]
         },
         "limit": {
-            "title": "Items Per Request",
+            "title": "📦 Items Per Request",
             "type": "integer",
-            "description": "Number of items to fetch per API request (max 100)",
+            "description": "Number of items to fetch in each API call (max 100).",
             "default": 24,
             "minimum": 1,
             "maximum": 100,
             "unit": "items"
         },
         "maxResults": {
-            "title": "Max Results to Fetch",
+            "title": "📈 Max Results",
             "type": "integer",
-            "description": "Maximum total results to collect (0 for unlimited)",
+            "description": "Maximum total number of results to fetch (0 = unlimited).",
             "default": 0,
             "minimum": 0,
             "unit": "items"
         },
         "batchDelay": {
-            "title": "Delay Between Requests",
+            "title": "⏱ Delay Between Searches",
             "type": "integer",
-            "description": "Milliseconds to wait between API requests",
+            "description": "Pause (in milliseconds) between each search query to reduce rate limits or load.",
             "default": 100,
             "minimum": 0,
             "maximum": 10000,
