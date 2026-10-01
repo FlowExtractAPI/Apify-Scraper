@@ -1,7 +1,8 @@
 # 🔍 Apify Scraper
 
 ## ✨ Overview
-Apify Store Scraper is a powerful actor for extracting comprehensive data from the Apify Store marketplace. Whether you need to research available actors, monitor pricing changes, or gather insights on developer tools, this scraper provides a reliable solution with advanced features for data persistence and batch processing.
+Apify Store Scraper is a powerful actor for extracting comprehensive data from the Apify Store marketplace. Whether you need to research available actors, monitor pricing changes, or gather insight[...]
+
 ## 📊 What Can It Scrape?
 
 The Apify Store Scraper extracts detailed information from actor listings, including:
@@ -106,7 +107,7 @@ Use the `search` array to process multiple queries in a single run. Each term wi
 
 ### ⏱️ Rate Limiting
 
-The `batchDelay` parameter helps you control how aggressively the actor makes requests. Higher values are more conservative but slower, while lower values are faster but may increase the risk of temporary blocks.
+The `batchDelay` parameter helps you control how aggressively the actor makes requests. Higher values are more conservative but slower, while lower values are faster but may increase the risk of [...]
 
 ## ⚠️ Limitations
 
@@ -125,15 +126,18 @@ This actor is open source! Feel free to:
 
 Check out the [GitHub repository](https://github.com/FlowExtractAPI/Apify-Scraper) for the latest code and updates.
 
-## 🤝 Support & Contact
+## 💬 Support & Contact
 
-For assistance or custom implementations:
+### Get Help
 
-- 📧 Email: [flowextractapi@outlook.com](mailto:flowextractapi@outlook.com)
-- 🐙 GitHub: [FlowExtractAPI](https://github.com/FlowExtractAPI)
-- 🐦 Twitter: [@FlowExtractAPI](https://x.com/FlowExtractAPI)
-- 🔧 Apify: [dz_omar](https://apify.com/dz_omar)
+- 🌐 **Website**: [flowextractapi.com](https://flowextractapi.com)
+- 📧 **Email**: [flowextractapi@outlook.com](mailto:flowextractapi@outlook.com)
+- 🙋 **Apify Profile**: [FlowExtract API](https://apify.com/dz_omar?fpr=smcx63)
+- 💬 **GitHub Issues**: [FlowExtractAPI](https://github.com/FlowExtractAPI)
 
-## 🙏 Acknowledgements
+### Social Media
 
-Special thanks to all contributors and the Apify community for their support and inspiration. This project aims to make data collection from the Apify Store accessible and efficient for everyone.
+- 💼 **LinkedIn**: [flowextract-api](https://www.linkedin.com/in/flowextract-api/)
+- 🐦 **X**: [@FlowExtractAPI](https://x.com/FlowExtractAPI)
+- 📱 **Facebook**: [flowextractapi](https://www.facebook.com/flowextractapi)
+- 🎵 **TikTok**: [@flowextractapi](https://www.tiktok.com/@flowextractapi)
