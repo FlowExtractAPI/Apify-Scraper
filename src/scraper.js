@@ -66,15 +66,12 @@ export async function scrapeStore(input) {
             offset: state.currentOffset.toString()
         };
 
-        // Only add managedBy if it has a value
         if (input.managedBy) {
             params.managedBy = input.managedBy;
         }
 
         const url = `${BASE_URL}?${new URLSearchParams(params)}`;
         console.log(`Fetching ${currentLimit} items from offset ${state.currentOffset}...`);
-
-        //await new Promise(r => setTimeout(r, 1000)); // for a debug
 
         try {
             const response = await gotScraping.get(url, {
